@@ -38,7 +38,7 @@ class ExceptionHandlerConfigIntegrationTest {
     @Autowired
     private ErrorMessageHelper errorMessage;
 
-    private static final String BASE_URL = "/api/v2/case/";
+    private static final String BASE_URL = "/api/v1/case/";
 
     @Test
     @WithMockUser(username = "testuser", roles = {"STAFF"})
