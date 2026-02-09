@@ -186,7 +186,7 @@ The following languages are supported English, French and Spanish
 
 Usage
 ```http
-GET /api/v2/case?locale=en-gb
+GET /api/v1/case?locale=en-gb
 ```
 
 Supported Locale Values:
