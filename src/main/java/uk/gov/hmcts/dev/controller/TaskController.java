@@ -20,7 +20,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/v2/case")
+@RequestMapping("/api/v1/case")
 @RequiredArgsConstructor
 public class TaskController {
     private final TaskService taskService;
