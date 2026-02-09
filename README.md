@@ -44,10 +44,10 @@ mvn spring-boot:run
 
 - API:
 
-[`http://localhost:8081/api/v2/case`](http://localhost:8081/api/v2/case)
+[`http://localhost:8081/api/v1/case`](http://localhost:8081/api/v1/case)
 
 - Auth: 
-[`http://localhost:8081/api/v2/auth`](http://localhost:8081/api/v2/auth)
+[`http://localhost:8081/api/v1/auth`](http://localhost:8081/api/v1/auth)
 
 - H2 Console:
 
@@ -65,7 +65,7 @@ JDBC URL: `jdbc:h2:mem:caseworkerTestDB`
 | member | pass123 | ROLE_STAFF |
 | user | pass123 | ROLE_USER |
 
-Login Endpoint: POST /api/v2/auth/
+Login Endpoint: POST /api/v1/auth/
 
 Request:
 ```payload
@@ -99,12 +99,12 @@ Swagger UI:
 
 | Method | Endpoint | Description                     |
 |--------|------------------|---------------------------------|
-| POST   | `/api/v2/auth/` | Login and Recieve JWT           |
-| POST   | `/api/v2/case`   | Create new case (auth required) |
-| GET    | `/api/v2/case`  | List all cases  (auth required) |
-| GET    | `/api/v2/case/{id}` | Get case by ID (auth required)  |
-| PUT    | `/api/v2/case/{id}` | Update case (auth required)     |
-| DELETE | `/api/v2/case/{id}` | Delete case (auth required)    |
+| POST   | `/api/v1/auth/` | Login and Recieve JWT           |
+| POST   | `/api/v1/case`   | Create new case (auth required) |
+| GET    | `/api/v1/case`  | List all cases  (auth required) |
+| GET    | `/api/v1/case/{id}` | Get case by ID (auth required)  |
+| PUT    | `/api/v1/case/{id}` | Update case (auth required)     |
+| DELETE | `/api/v1/case/{id}` | Delete case (auth required)    |
  
 
 ---
