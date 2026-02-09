@@ -61,7 +61,7 @@ class TaskControllerIntegrationTest {
     private List<Task> savedTasks;
     private final UUID createdByForTask1 = UUID.randomUUID();
     private final UUID createdByForTask2 = UUID.randomUUID();
-    private static final String BASE_URL = "/api/v2/case/";
+    private static final String BASE_URL = "/api/v1/case/";
 
     @BeforeEach
     void setUp() {
